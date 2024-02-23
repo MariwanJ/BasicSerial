@@ -6,7 +6,7 @@ This might work well for low hastighet and high clock MCU:s. But might fail on s
 This project is based on NUCLEO-F207ZG. Change the setting to get it work for other CPU.
 
 # WARNING!!
- Use it at your own risk. I don't gurantee the performance of this library.
+ Use it at your own risk. I don't guarantee the performance of this library.
 
 ## How to set up this project:
 
