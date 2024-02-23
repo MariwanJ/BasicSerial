@@ -1,32 +1,38 @@
-# Prerequisites
-*.d
+# CLion build dirs
+cmake-build-*/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# User-specific CLion stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/runConfigurations
 
-# Precompiled Headers
-*.gch
-*.pch
+# Generated CLion files
+.idea/**/contentModel.xml
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Sensitive or high-churn CLion files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
-# Fortran module files
-*.mod
-*.smod
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# VS Code build dir
+build/
 
-# Executables
-*.exe
-*.out
-*.app
+# VS Code config files
+.vscode/
+
+# Python stuff
+*.pyc
+
+# Mac stuff
+.DS_Store
