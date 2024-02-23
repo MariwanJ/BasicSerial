@@ -2,7 +2,7 @@
 This project implements the software serial. No interrupt or threads are used. The origional idea was to convert the SoftSerial but I could not get it working. 
 Now as for Arduino library, you will not be able to send and recieve independetly. Scheduling of threads is 1ms. Which means that the high speed reaction which Serial communications needs cannot be achieved.
 Since this library uses wait_ns. It will be very much dependent on the implementation of the wait_ns per each microcontroller inside MBED-OS CE. 
-This might work well for low hastighet and high clock MCU:s. But might fail on some other low cpu clocks.
+This might work well for low spped and high clock MCU:s. But might fail on some other low cpu clocks.
 This project is based on NUCLEO-F207ZG. Change the setting to get it work for other CPU.
 
 # WARNING!!
