@@ -32,7 +32,7 @@
 int main() {
 	BasicSerial rs232(PB_10, PB_11, B1200);
 	SLEEP(1s);
-	const char* t = "Test Thread Serial";
+	const char* t = "Test Basic Serial";
 	std::string buf;
 	while (1) {
 		unsigned char byte;
