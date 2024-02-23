@@ -21,7 +21,4 @@ This project is based on NUCLEO-F207ZG. Change the setting to get it work for ot
 
 ## Notes:
 - Inside your cpp file under /src do not use #include <balbla.h> , you should write the include with quotation marks .i.e. #include "balbla.h".
-- The PDF shows you how to configure Eclipse for debugging and for compiling. Please notice that the pictures inside the pdf is for a project based on NUCLEO-F207ZG. 
-  Try to change the names, script files..etc. to your HW. OpeOCD scritp could be either written or found on the net if you cannot find it. 
-  I made the script for F2X. Boards by myself. OpenOCD doesn’t provide that by default.
 - Run the batch or bash file to compile. 
