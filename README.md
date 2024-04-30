@@ -1,11 +1,11 @@
 # Mbed CE BasicSerial library
-This project implements the software serial. No interrupt or threads are used. The origional idea was to convert the SoftSerial but I could not get it working. 
+This project implements software serial communication without the use of interrupts or threads. Originally, the intention was to convert SoftSerial, but I encountered difficulties in getting it to work.
 
-Now as for Arduino library, you will not be able to send and recieve independetly. Scheduling of threads is 1ms. Which means that the high speed reaction which Serial communications needs cannot be achieved by multi threading.
-Since this library uses wait_ns. It will be very much dependent on the implementation of the wait_ns per each microcontroller inside MBED-OS CE. 
+Regarding the Arduino library, it is important to note that independent sending and receiving is not possible. The scheduling of threads is set at 1ms, which means that the high-speed responsiveness required for Serial communications cannot be achieved through multithreading.
 
-This might work well for low spped and high clock MCU:s. But might fail on some other low cpu clocks.
-This project is based on NUCLEO-F207ZG. Change the setting to get it work for other CPU.
+Since this library relies on the implementation of wait_ns for each microcontroller within MBED-OS CE, its performance will heavily depend on the specific implementation of wait_ns for each microcontroller.
+
+While this project may work well for low-speed and high-clock MCUs, it may encounter issues with other low CPU clock configurations. Currently, the project is based on the NUCLEO-F207ZG board, but you will need to modify the settings to make it work with other CPUs.
 
 # WARNING!!
  Use it at your own risk. I don't guarantee the performance of this library.
