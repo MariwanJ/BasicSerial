@@ -1,11 +1,11 @@
 # Mbed CE BasicSerial library
-This project implements software serial communication without the use of interrupts or threads. Originally, the intention was to convert SoftSerial, but I encountered difficulties in getting it to work.
+This project implements software serial communication without the use of interrupts or threads. Initially, the goal was to convert the SoftSerial library, but I encountered difficulties in achieving functionality.
 
-Regarding the Arduino library, it is important to note that independent sending and receiving is not possible. The scheduling of threads is set at 1ms, which means that the high-speed responsiveness required for Serial communications cannot be achieved through multithreading.
+It is important to note that the Arduino library does not support independent sending and receiving. The thread scheduling is set at 1 ms, which means that the high-speed responsiveness required for serial communications cannot be achieved through multithreading.
 
-Since this library relies on the implementation of wait_ns for each microcontroller within MBED-OS CE, its performance will heavily depend on the specific implementation of wait_ns for each microcontroller.
+Since this library relies on the implementation of `wait_ns` for each microcontroller within MBED-OS CE, its performance will heavily depend on how `wait_ns` is implemented for each specific microcontroller.
 
-While this project may work well for low-speed and high-clock MCUs, it may encounter issues with other low CPU clock configurations. Currently, the project is based on the NUCLEO-F207ZG board, but you will need to modify the settings to make it work with other CPUs.
+While this project may work well for low-speed and high-clock MCUs, it may face challenges with other configurations that have lower CPU clock speeds. Currently, the project is based on the NUCLEO-F207ZG board, but you will need to modify the settings to make it compatible with other CPUs.
 
 # WARNING!!
  Use it at your own risk. I don't guarantee the performance of this library.
